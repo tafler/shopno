@@ -1,0 +1,64 @@
+.empty {
+  background-color: rgba(220, 22, 22, 0.2);
+  outline: 1px solid red;
+}
+
+.not-empty {
+  background-color: rgba(20, 22, 222, 0.2);
+  outline: 1px solid red;
+}
+
+.main {
+  min-height: 805px;
+  background-color: #eff0f2;
+}
+
+.about {
+  min-height: 985px;
+  background-color: #f8fafa;
+}
+
+.works {
+  min-height: 1170px;
+  background-color: #f8fafa;
+}
+
+.services {
+  min-height: 1620px;
+  background-color: #f8fafa;
+}
+
+.team {
+  min-height: 1315px;
+  background-color: #f8fafa;
+}
+
+.comments {
+  min-height: 920px;
+  background-color: #f8fafa;
+}
+
+.partners {
+  min-height: 385px;
+  background-color: #f8fafa;
+}
+
+.map {
+  min-height: 705px;
+  background-color: #f8fafa;
+}
+
+footer {
+  min-height: 314px;
+  background-color: #f8fafa;
+}
+
+.container {
+  width: 1140px;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */

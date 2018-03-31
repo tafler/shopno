@@ -1,0 +1,78 @@
+@import "variables.scss";
+
+.empty{
+    background-color: rgba(220, 22, 22, 0.2);
+    outline: 1px solid red;
+}
+.not-empty{
+    background-color: rgba(20, 22, 222, 0.2);
+    outline: 1px solid red;
+}
+
+
+.main {
+    min-height: 805px;
+    background-color: $color_bg_1;
+    .container {
+    }
+}
+.about {
+    min-height: 985px;
+    background-color: $color_bg_2;
+    .container {
+    }
+}
+.works {
+    min-height: 1170px;
+    background-color: $color_bg_2;
+    .container {
+    }
+}
+.services {
+    min-height: 1620px;
+    background-color: $color_bg_2;
+    .container {
+    }
+}
+.team {
+    min-height: 1315px;
+    background-color: $color_bg_2;
+    .container {
+        
+    }
+}
+
+
+
+.comments {
+    min-height: 920px;
+    background-color: $color_bg_2;   
+    .container {     
+    }
+}
+.partners {
+    min-height: 385px;
+    background-color: $color_bg_2;  
+    .container {      
+    }
+}
+.map {
+    min-height: 705px;
+    background-color: $color_bg_2;
+    .container {
+    }
+}
+footer {
+    min-height: 314px;
+    background-color: $color_bg_2;   
+    .container {     
+    }
+}
+.container {
+    width: 1140px;
+}
+section{
+    margin: 0;
+    padding: 0;
+
+}
