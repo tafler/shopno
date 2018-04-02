@@ -5,8 +5,89 @@ $color_bg_4: #f9fbfb;
 $color_bg_footer: #262b2e;
 
 $color_blue: #6eeee4;
-$color_lighten_grey: #eff0f2;
-$color_light_grey: #eaebed;
-$color_dark_grey: #515150;
+$color_lighten_gray: #eff0f2;
+$color_light_gray: #eaebed;
+$color_gray: #ecedef;
+$color_dark_gray: #515150;
 $color_darker_gray: #262b2e;
 
+
+//fonts
+$font-raleway: 'Raleway', sans-serif;
+$font-merr: 'Merriweather', serif;
+
+//global
+*{
+    outline: none;
+}
+body {    
+    font-size: 16px;
+    font-family: $font-raleway;
+}
+img {
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+.btn-transparent {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.749);
+    text-transform: uppercase;
+    line-height: 1.556;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    width: 228px;
+    height: 49px;
+    text-align: center;
+    padding: 10px;
+    &:hover {
+        color: $color_blue;
+        border-color: $color_blue;
+    }
+}
+.border-transparent {
+    border: none;
+}
+.bg-my {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.container {
+    width: 1140px;
+    padding-bottom: 120px;
+}
+h1 {
+    font-size: 45px;
+    font-family: "Montserrat";
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section_title {    
+    padding-top: 120px;
+    padding-bottom: 130px;
+    text-align: center;
+    text-transform: uppercase;    
+    h2 {    
+        font-size: 38px;
+        font-family: "Montserrat";
+        color: rgba(0, 0, 0, 0.902);
+        font-weight: bold;
+        line-height: 0.737;            
+    }
+    p {
+        font-size: 18px;
+        font-family: $font-merr;
+        color: rgba(0, 0, 0, 0.62);
+        line-height: 1.556;
+    }      
+}
+
+
+::-moz-placeholder          {color: rgba(255, 255, 255, 0.5)}/* Firefox 19+ */
+::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5)}
+:-moz-placeholder           {color: rgba(255, 255, 255, 0.5)}/* Firefox 18- */
+:-ms-input-placeholder      {color: rgba(255, 255, 255, 0.5)}

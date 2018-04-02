@@ -1,0 +1,59 @@
+@media (max-width: 991.98px){
+
+
+    .header{
+        .container{
+            .row{
+                .main-nav ul{
+                    flex-direction: column;
+                    width: 300px;
+                    justify-content: flex-end; 
+                    align-items: flex-end;
+                    a{
+                        display: block;
+                        width: 100px;
+                        text-align: end;
+                    } 
+                }
+            }
+        }
+    }
+
+    .services{
+        &__block{
+            &__preload{
+                font-size: 12px;
+
+                h5{
+                    font-size: 16px;    
+                }
+                a{
+                    font-size: 15px;
+                    line-height: 2;
+
+                }
+            }
+        }
+    }
+    .team {
+        &__contact {
+            padding-bottom: 250px;
+            &__info {
+                width: 95%;
+                background:none;
+                opacity: 1;
+                bottom: 0;
+                margin-left: 0px;
+                font-size:
+                14px;
+                h3{
+                    font-size: 20px;
+                }
+                &::after{
+                    display: none;
+                }
+            }
+        }
+
+    }
+}

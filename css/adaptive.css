@@ -1,0 +1,41 @@
+@media (max-width: 991.98px) {
+  .header .container .row .main-nav ul {
+    flex-direction: column;
+    width: 300px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .header .container .row .main-nav ul a {
+    display: block;
+    width: 100px;
+    text-align: end;
+  }
+  .services__block__preload {
+    font-size: 12px;
+  }
+  .services__block__preload h5 {
+    font-size: 16px;
+  }
+  .services__block__preload a {
+    font-size: 15px;
+    line-height: 2;
+  }
+  .team__contact {
+    padding-bottom: 250px;
+  }
+  .team__contact__info {
+    width: 95%;
+    background: none;
+    opacity: 1;
+    bottom: 0;
+    margin-left: 0px;
+    font-size: 14px;
+  }
+  .team__contact__info h3 {
+    font-size: 20px;
+  }
+  .team__contact__info::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=adaptive.css.map */

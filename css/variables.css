@@ -1,1 +1,99 @@
-/* No CSS *//*# sourceMappingURL=variables.css.map */
+* {
+  outline: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-transparent {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.749);
+  text-transform: uppercase;
+  line-height: 1.556;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  width: 228px;
+  height: 49px;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn-transparent:hover {
+  color: #6eeee4;
+  border-color: #6eeee4;
+}
+
+.border-transparent {
+  border: none;
+}
+
+.bg-my {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  width: 1140px;
+  padding-bottom: 120px;
+}
+
+h1 {
+  font-size: 45px;
+  font-family: "Montserrat";
+  color: #505050;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section_title {
+  padding-top: 120px;
+  padding-bottom: 130px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section_title h2 {
+  font-size: 38px;
+  font-family: "Montserrat";
+  color: rgba(0, 0, 0, 0.902);
+  font-weight: bold;
+  line-height: 0.737;
+}
+
+.section_title p {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  color: rgba(0, 0, 0, 0.62);
+  line-height: 1.556;
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Firefox 19+ */
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+/*# sourceMappingURL=variables.css.map */
