@@ -11,8 +11,11 @@
         //height: auto;
     }
 }
+button:focus{
+    outline: none;
+}
 .header {
-    .container { 
+.container { 
         padding-bottom: 0;
         position: relative;
         .row {                
@@ -32,16 +35,19 @@
             }    
             .burger{
                 position: relative;
+                &:hover nav{
+                    display: block;
+                }
             }        
             .main-nav{
                 position: absolute;
                 right: 0;
                 top: 30px;
+                display: none;
 
                 ul{
-
-                    width: 100%;
                     display: flex;
+                    width: 100%;
                     flex-direction: column;
                     list-style: none;    
                     justify-content: flex-end;
@@ -102,6 +108,7 @@
                 width: 80%;
                 margin-right: 12%;
                 margin-bottom: 20px;
+                margin-left: 35px;
                 box-shadow: 0 0 20px 5px $color_gray,
                             80px 0 0 -50px $color_gray,
                             -80px 0 0 -50px $color_gray;                
@@ -234,26 +241,32 @@
 .comments {
     background-color: $color_bg_4;   
     &__slider__item {
-        img {
-        box-shadow: 0 0 10px 3px $color_gray,
+        position: relative;
+        max-height: 480px;
+        &__img {
+            float: left;
+            width: 35%;
+            margin: 0 40px;
+             box-shadow: 0 0 10px 3px $color_gray,
                     -60px 0 0 -25px $color_gray,
                     60px 0 0 -25px $color_gray;
         }
         &__text {
-            .card{
-                margin: 25px 0;
-                height: 88%;
+                float: right;
+                width: 50%;
+                margin: 20px 0;
+                min-height: 100%;
                 background: $color_gray;
             
-                &-body{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                }
+            &-body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
-        }    
-    }
+        }
+    }    
 }
+
 
 .partners {
     padding-top: 100px;
@@ -380,4 +393,26 @@
         color: rgba(255, 255, 255, 0.4);
         margin-top: 25px;
       }      
+}
+
+.slick-dots {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    .slick-active{
+        button{
+            background: $color_blue;
+        }
+    }
+    li button{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        display: block;
+        border: none;
+        border-radius: 50%;
+        margin: 3px 3px;
+        cursor: pointer;
+    }
 }

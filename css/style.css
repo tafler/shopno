@@ -1,13 +1,7 @@
-.empty {
-  background-color: rgba(220, 22, 22, 0.2);
-  outline: 1px solid red;
 * {
   outline: none;
 }
 
-.not-empty {
-  background-color: rgba(20, 22, 222, 0.2);
-  outline: 1px solid red;
 body {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
@@ -153,6 +147,10 @@ h1 {
   }
 }
 
+button:focus {
+  outline: none;
+}
+
 .header .container {
   padding-bottom: 0;
   position: relative;
@@ -180,15 +178,20 @@ h1 {
   position: relative;
 }
 
+.header .container .row .burger:hover nav {
+  display: block;
+}
+
 .header .container .row .main-nav {
   position: absolute;
   right: 0;
   top: 30px;
+  display: none;
 }
 
 .header .container .row .main-nav ul {
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: column;
   list-style: none;
   justify-content: flex-end;
@@ -247,6 +250,7 @@ h1 {
   width: 80%;
   margin-right: 12%;
   margin-bottom: 20px;
+  margin-left: 35px;
   box-shadow: 0 0 20px 5px #ecedef, 80px 0 0 -50px #ecedef, -80px 0 0 -50px #ecedef;
 }
 
@@ -387,17 +391,27 @@ h1 {
   background-color: #f9fbfb;
 }
 
-.comments__slider__item img {
+.comments__slider__item {
+  position: relative;
+  max-height: 480px;
+}
+
+.comments__slider__item__img {
+  float: left;
+  width: 35%;
+  margin: 0 40px;
   box-shadow: 0 0 10px 3px #ecedef, -60px 0 0 -25px #ecedef, 60px 0 0 -25px #ecedef;
 }
 
-.comments__slider__item__text .card {
-  margin: 25px 0;
-  height: 88%;
+.comments__slider__item__text {
+  float: right;
+  width: 50%;
+  margin: 20px 0;
+  min-height: 100%;
   background: #ecedef;
 }
 
-.comments__slider__item__text .card-body {
+.comments__slider__item__text-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -531,5 +545,26 @@ h1 {
   font-family: "Raleway", sans-serif;
   color: rgba(255, 255, 255, 0.4);
   margin-top: 25px;
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.slick-dots .slick-active button {
+  background: #6eeee4;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: none;
+  border-radius: 50%;
+  margin: 3px 3px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
